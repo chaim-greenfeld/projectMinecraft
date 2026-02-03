@@ -51,10 +51,11 @@ for (let i = 0; i < too.length; i++) {
   tools.appendChild(div);
 }
 
-// container.addEventListener("click", (e) => {
-//   e.target.className = choice;
-// });
-
+const data = {
+    dirt: 0,
+    stone: 0
+}
+tools.append({data})
 container.addEventListener("click", (e) => {
 
     if (e.target.className == 'sky' ) {
@@ -63,12 +64,18 @@ container.addEventListener("click", (e) => {
     }
     else  if (e.target.className == 'dirt item' && tool == 'shovel'){
         e.target.className = 'sky'
+        data[dirt] += 1
     }
     else if (e.target.className == 'grass item' && tool == 'shovel'){
         e.target.className = 'sky'
+        data[dirt] += 1
     }
     else if (e.target.className == 'stone item' && tool == 'pickaxe') {
         e.target.className = 'sky'
+        data[stone] += 1
+    }
+    else {
+        
     }
 });
 
