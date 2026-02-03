@@ -17,7 +17,7 @@ body {
     background-color: #87CEEB;
 }
 .grass {
-    background: url('grass.webp') ;
+    background: url('grass.webp') center center / cover  ;
 }
 .dirt{
     
@@ -25,6 +25,14 @@ body {
 }
 .stone{
     background: url('stone.webp') center center / cover;
+}
+
+.wood{
+    background: url('oak-log.webp') center center / cover;
+}
+
+.leaves{
+  background: url('oak-leaves.webp') center center / cover;
 }
 
 
@@ -70,9 +78,8 @@ body {
     height: 4rem;
     width:  4rem;
     border: 2px solid;
-    border-color: aliceblue;
+    border: none;
 }
-
 
 
 
@@ -93,3 +100,18 @@ body {
 .axe {
      background: url('diamond-axe.webp') center center / cover;
 }
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+
+
+
+
+
+
+
+
